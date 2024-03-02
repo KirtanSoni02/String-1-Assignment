@@ -1,0 +1,108 @@
+1.
+#include <iostream>
+#include<string>
+using namespace std;
+int main() {
+    string str;
+    cin>>str;
+    for(int i=1;i<str.size();i+=2){
+        str[i]='#';
+    }
+    cout<<str;
+    return 0;
+}
+
+
+2.
+#include<iostream>
+#include<string> 
+using namespace std;
+int main(){
+    string str;
+    cin>>str;
+    int count=0;
+    for(char ele : str){
+        if(ele == 'a' || ele == 'e' || ele == 'i' || ele == 'o'
+        || ele == 'u'){
+            continue;
+        }
+        else count++;
+    }
+    cout<<count;
+    return 0;
+}
+
+3.
+ #include<iostream>
+ #include<string> 
+ #include<algorithm>
+ using namespace std;
+ int main(){
+     string str;
+     cin>>str;
+     string s=str;
+     reverse(str.begin(),str.end());
+     if(s==str) cout<<"Yes";
+     else cout<<"No";
+ }
+ 
+
+4.
+#include<iostream>
+#include<string>
+#include<algorithm>
+using namespace std;
+int main(){
+    string str;
+    cin>>str;
+    if(str.size()%2==0){
+        reverse(str.begin()+str.size()/2,str.end());
+    }
+    cout<<str;
+    return 0;
+}
+
+
+5.
+#include<iostream>
+#include<string>
+using namespace std;
+int main(){
+    string str;
+    int no=0;
+    cin>>str;
+    for(int i=0;i<str.size();i++){
+        no*=10;
+        no+=(int)str[i]-48;
+    }
+    cout<<no;
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
